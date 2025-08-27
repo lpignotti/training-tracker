@@ -104,22 +104,4 @@ training-tracker/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## ⚡ Quick Start Scripts
-
-Convenient scripts are provided in the `react-app/scripts/` folder:
-
-```bash
-cd react-app/scripts
-
-# Start both backend and frontend
-./start-app.sh
-
-# Stop both backend and frontend
-./kill-app.sh
-```
-
-These scripts automatically handle starting/stopping both the backend server and React development server.
-
----
-
 **Remember:** This is a demonstration project only. Implement proper security, authentication, and GDPR compliance before any production use.
