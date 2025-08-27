@@ -104,4 +104,6 @@ training-tracker/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-**Remember:** This is a demonstration project only. Implement proper security, authentication, and GDPR compliance before any production use.
+## Remember
+
+This is a demonstration project only. Implement proper security, authentication, and GDPR compliance before any production use.
