@@ -1,0 +1,4 @@
+id,name,password,surname,email,category,role,isTrainer
+1,Mario,mariorossi,Rossi,mario@rossi.com,Management,Trainer,true
+2,Player,playerone,One,player@one.com,Seniores maschile,Player,false
+3,Player,playertwo,Two,player@two.com,Under 12,Player,false
