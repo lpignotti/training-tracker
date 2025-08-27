@@ -105,7 +105,6 @@ const writeUsersToCsv = async (users) => {
     
     await publicCsvWriter.writeRecords(processedUsers);
     
-    console.log(`Saved ${users.length} users to CSV files`);
   } catch (error) {
     console.error('Error writing CSV:', error);
     throw error;
