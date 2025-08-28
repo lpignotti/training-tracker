@@ -84,11 +84,11 @@ npm start
 1. **Open your web browser**
 2. **Navigate to**: http://localhost:3000
 3. **Login with demo credentials**:
-   - **Admin Users**:
-     - `papa / LLM-FTW` (Papa Pionono)
-     - `papa / LLM-FTW` (Papa Benedetto) 
-   - **Regular User**:
-     - `normal / LLM-FTW` (Normal User)
+   - **Trainer Users**:
+     - `mario@rossi.com / mariorossi` (Mario Rossi)
+   - **Player Users**:
+     - `player@one.com / playerone` (Player One)
+     - `player@two.com / playertwo` (Player Two)
 
 ## 🛠️ Development Commands
 
@@ -147,10 +147,10 @@ allreds/
 
 ### 🔐 Authentication System
 - **CSV-based user storage** with encrypted passwords
-- **Role-based access control** (Administrator vs Regular User)
+- **Role-based access control** (Trainer vs Player)
 - **Session management** with auto-logout on browser close
 
-### 👥 User Management (Admin Only)
+### 👥 User Management (Trainer Only)
 - **View all users** in organized table format
 - **Add new users** with form validation
 - **Role assignment** and user categorization
@@ -159,13 +159,13 @@ allreds/
 ### 📅 Training Management
 - **Schedule training sessions** with date/time picker
 - **Player assignment** from existing user database
-- **Grouped display** showing all sessions per user
+- **Grouped display** showing all sessions per player
 - **CSV persistence** for data consistency
-- **Role-based views**: Admins see all sessions, Users see only their own
+- **Role-based views**: Trainers see all sessions, Players see only their own
 
 ### 🧭 Navigation System
-- **Breadcrumb navigation** for admin pages
-- **Intuitive page routing** between Homepage, Administration, and Training
+- **Breadcrumb navigation** for trainer pages
+- **Intuitive page routing** between Homepage, User Management, and Training
 - **Clean Material-UI interface** with professional styling
 
 ## 🗄️ Data Storage
@@ -174,14 +174,15 @@ The application uses CSV files for data persistence:
 
 ### Users Data (`users.csv`)
 ```csv
-id,name,password,surname,email,category,role,isAdmin
-1,papa,LLM-FTW,pionono,pionono@heaven.com,Management,Administrator,true
+id,name,password,surname,email,category,role,isTrainer
+1,Mario,mariorossi,Rossi,mario@rossi.com,Management,Trainer,true
+2,Player,playerone,One,player@one.com,Seniores maschile,Player,false
 ```
 
 ### Training Data (`trainings.csv`)
 ```csv
 id,playerId,playerName,trainingDay,createdBy,createdAt
-1,1,papa - pionono,2025-08-25T16:31:00.000Z,1,2025-08-25T16:31:35.365Z
+1,2,Player - One,2025-08-27T18:00:00.000Z,1,2025-08-27T18:00:35.365Z
 ```
 
 ## 🚨 Troubleshooting
